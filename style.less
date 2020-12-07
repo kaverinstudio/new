@@ -4,6 +4,7 @@ body {
    color: black;
 }
 
+
 *:focus {
    outline: -webkit-focus-ring-color auto 0px !important;
 }
@@ -121,10 +122,92 @@ header {
                   }
                }
             }
+
+            .block-search {
+               position: absolute;
+               padding-bottom: 30px;
+               padding-left: 10px;
+               width: 60%;
+
+               .form-control {
+                  width: 70%;
+                  height: 36px;
+                  background: #FFFFFF;
+                  border: 1px solid #000000;
+                  box-sizing: border-box;
+                  border-radius: 5px;
+               }
+            }
+
+            .block-search {
+               .form-inline {
+                  .form-control {
+                     border: 1px solid gray;
+                     transition: all 0.1s ease-in;
+
+                     &:focus {
+                        box-shadow: hotpink 0px 0px 5px;
+                     }
+                  }
+
+                  .btn {
+                     color: #FF01EA;
+                     border: #FF01EA 1px solid;
+                     transition: all 0.1s ease-in;
+
+                     &:hover {
+                        background-color: #FF01EA;
+                        color: white;
+
+                     }
+                  }
+               }
+            }
+
          }
       }
 
 
    }
 
+}
+
+// Swiper
+
+.swiper-container {
+   width: 60%;
+
+   .swiper-pagination-bullet {
+      background-color: white;
+   }
+
+   .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      img {
+         width: 100%;
+      }
+   }
+}
+
+.block-banner {
+   width: 20%;
+   height: 100%;
+   border: hotpink 1px solid;
 }
